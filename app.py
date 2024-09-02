@@ -183,3 +183,15 @@ if user_menu == 'Athlete-wise Analysis':
     fig = px.line(final,x='Year',y=['Men','Women'])
     fig.update_layout(autosize=False, width=1000, height=600)
     st.plotly_chart(fig)
+
+st.sidebar.empty()
+st.sidebar.markdown(
+    """
+    <div style="position: relative; padding-top: 100px; text-align: left;">
+        <b>By Priyanshu</b>
+        <br>    
+        <a href = "https://github.com/PreYarnShoe/Olympics-analysis">GitHub</a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
